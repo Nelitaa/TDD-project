@@ -27,4 +27,11 @@ describe Solver do
       expect(solver.reverse('cat')).to eql('tac')
     end
   end
+
+  describe '#fizzbuzz' do
+    it 'returns 7 for 7' do
+      solver = Solver.new
+      expect(solver.fizzbuzz(7)).to eql '7'
+    end
+  end
 end
