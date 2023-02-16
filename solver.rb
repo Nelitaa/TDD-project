@@ -1,6 +1,8 @@
 class Solver
   def factorial(number)
-    if number == 0
+    if number < 0
+      raise ArgumentError.new("Negative numbers are not allowed")
+    elsif number == 0
       1
     else
       number * factorial(number - 1)
