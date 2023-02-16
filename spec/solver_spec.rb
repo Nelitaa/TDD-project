@@ -16,4 +16,10 @@ describe Solver do
       expect{ solver.factorial(-1) }.to raise_error(ArgumentError)
     end
   end
+
+  describe '#reverse' do
+  it 'returns "alen" when the word is "nela"' do
+    solver = Solver.new
+    expect(solver.reverse('nela')).to eql('alen')
+  end
 end
