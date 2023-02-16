@@ -10,6 +10,6 @@ class Solver
   end
 
   def reverse(word)
-    'alen'
+    word.reverse
   end
 end
