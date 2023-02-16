@@ -22,5 +22,9 @@ describe Solver do
       solver = Solver.new
       expect(solver.reverse('nela')).to eql('alen')
     end
+    it 'returns "tac" when the word is "cat"' do
+      solver = Solver.new
+      expect(solver.reverse('cat')).to eql('tac')
+    end
   end
 end
