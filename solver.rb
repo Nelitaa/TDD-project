@@ -14,6 +14,10 @@ class Solver
   end
 
   def fizzbuzz(number)
-    number.to_s
+    if number % 3 == 0
+      'fizz'
+    else
+      number.to_s
+    end
   end
 end
