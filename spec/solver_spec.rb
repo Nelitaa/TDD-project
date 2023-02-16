@@ -18,8 +18,9 @@ describe Solver do
   end
 
   describe '#reverse' do
-  it 'returns "alen" when the word is "nela"' do
-    solver = Solver.new
-    expect(solver.reverse('nela')).to eql('alen')
+    it 'returns "alen" when the word is "nela"' do
+      solver = Solver.new
+      expect(solver.reverse('nela')).to eql('alen')
+    end
   end
 end
