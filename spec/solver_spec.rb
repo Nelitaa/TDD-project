@@ -11,5 +11,9 @@ describe Solver do
       solver = Solver.new
       expect(solver.factorial(4)).to eq(24)
     end
+    it 'returns error for negative numbers' do
+      solver = Solver.new
+      expect(solver.factorial(-1)).to raise_error("No negative numbers!")
+    end
   end
 end
