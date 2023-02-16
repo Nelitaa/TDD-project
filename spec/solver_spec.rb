@@ -33,5 +33,9 @@ describe Solver do
       solver = Solver.new
       expect(solver.fizzbuzz(7)).to eql '7'
     end
+    it 'returns "fizz" for 3' do
+      solver = Solver.new
+      expect(solver.fizzbuzz(3)).to eql 'fizz'
+    end
   end
 end
