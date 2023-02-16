@@ -13,7 +13,7 @@ describe Solver do
     end
     it 'returns error for negative numbers' do
       solver = Solver.new
-      expect{ solver.factorial(-1) }.to raise_error(ArgumentError)
+      expect { solver.factorial(-1) }.to raise_error(ArgumentError)
     end
   end
 
